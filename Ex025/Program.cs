@@ -11,13 +11,12 @@ var numA = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число B: ");
 var numB = int.Parse(Console.ReadLine());
 
-if(numB > 0) // Я понял, что натуральное число (1, 2, 3 и тд) - именно относится к числу В, а число А может быть любым
+var stepen = numA;
+
+for (int i = 1; i <= numB; i++)
 {
-    var result = Math.Pow(numA, numB);
-    Console.WriteLine($"Число А ({numA}) в натуральной степени В ({numB}) = {result}");
+    stepen = stepen * numA;
 }
-else
-{
-    Console.WriteLine("Введено не правильное число (меньше или равно 0). Попробуй еще");
-}
- 
+
+Console.WriteLine($"Число А ({numA}) в натуральной степени В ({numB}) = {stepen}");
+
