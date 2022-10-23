@@ -14,7 +14,7 @@ var numB = int.Parse(Console.ReadLine());
 if(numB > 0) // Я понял, что натуральное число (1, 2, 3 и тд) - именно относится к числу В, а число А может быть любым
 {
     var result = Math.Pow(numA, numB);
-    Console.WriteLine($"Число А ({numA}) в степени В ({numB}) = {result}");
+    Console.WriteLine($"Число А ({numA}) в натуральной степени В ({numB}) = {result}");
 }
 else
 {
