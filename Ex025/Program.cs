@@ -11,7 +11,7 @@ var numA = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число B: ");
 var numB = int.Parse(Console.ReadLine());
 
-var stepen = numA;
+var stepen = 1;
 
 for (int i = 1; i <= numB; i++)
 {
